@@ -107,7 +107,7 @@ h2:before{
 
 .wrap{
   position: relative;
-	max-width: 100%;
+	width: 100%;
   margin: 0 auto;
   background: url(../images/img_bg-forest_phone-size.png) no-repeat center center;
   background-size: cover;
