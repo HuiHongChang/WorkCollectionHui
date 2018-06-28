@@ -111,7 +111,7 @@ h2:before{
   margin: 0 auto;
   background: url(../images/img_bg-forest_phone-size.png) no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+  
   overflow: hidden;
 }
 
@@ -119,7 +119,7 @@ h2:before{
   .wrap{
     background: url(../images/img_bg-forest_ipad-size.png) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
+    
     overflow: hidden;
   }
 }
@@ -128,7 +128,7 @@ h2:before{
   .wrap{
     background: url(../images/img_bg-forest_com-size.png) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
+    
     overflow: hidden;
   }
 }
