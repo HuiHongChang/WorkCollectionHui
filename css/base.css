@@ -115,34 +115,6 @@ h2:before{
   overflow: hidden;
 }
 
-@media( min-width: 667px){
-  .wrap{
-    background: url(../images/img_bg-forest_ipad-size.png) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-  }
-}
-
-@media( min-width: 1024px){
-  .wrap{
-    background: url(../images/img_bg-forest_com-size.png) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-  }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 2dppx){
-  .wrap{
-    background: url(../images/img_bg-forest_phone-size.png) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-  }
-}
-
 .topbar{
   position: fixed;
   left: 0;
