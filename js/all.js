@@ -97,6 +97,7 @@ $(document).ready(function () {
             var thisPos = $(this).offset().top;
             if((windowHeight + scrollPos) >= thisPos){
                 $(this).addClass('shine');
+                $('.jq_hideTop').addClass('fade_down');
             }
         });
     });

@@ -458,25 +458,14 @@ h2:before{
 }
 
 #works li h3{
-  position: absolute;
-  bottom: -20px;
-	left: 0;
-	display: block;
   width: 250px;
-  -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	opacity: 0;
-}
-
-#works li a:hover+h3 {
-	bottom: -36px;
-	opacity: 1;
 }
 
 #works .img_work{
   width: 250px;
   height: 200px;
   border-radius: 10px;
+  box-shadow: 0 2px 3px gray;
   overflow: hidden;
 }
 
@@ -485,7 +474,7 @@ h2:before{
 }
 
 #works .img_travel{
-  background: url(../images/works_travel.png);
+  background: url(../images/works_travel.png) no-repeat center center;
 }
 
 @media(min-width: 768px){
@@ -639,6 +628,15 @@ h2:before{
   transition: all 1.5s;
 }
 
+.jq_hideTop{
+  position: absolute;
+  bottom: -20px;
+	left: 0;
+	display: block;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
 
 /*fadein_Left_Right*/
 .fade{
@@ -647,6 +645,12 @@ h2:before{
 
 .fade_rotate{
   transform: translateX(0) rotate(7deg);
+}
+
+/*fadein_bottom*/
+.fade_down{
+	bottom: -36px;
+	opacity: 1;
 }
 
 /*shine*/
