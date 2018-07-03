@@ -173,7 +173,7 @@ h2:before{
   transition: 0.3s ease;
 }
 
-.topbar .nav a{
+.topbar .nav ul a{
   font-size: 24px;
   color: #ddcd45;
   display: block;
@@ -185,12 +185,13 @@ h2:before{
 .topbar .nav .closebox{
   background-color: #ddcd45;
   text-align: right;
+  padding-top: 2px;
+  padding-bottom: 2px;
   padding-right: 2px;
 }
 
 .topbar .nav .btn_close{
   color: #41403e;
-  display: inline;
 }
 
 /*JQuery動畫*/
@@ -214,23 +215,24 @@ h2:before{
     float: right;
     position: static;
     width: auto;
-    background-color: transparent;
     transform: none;
     transition: none;
   }
 
-  .topbar .nav li{
-    display: inline-block;
-    text-align: right;
+  .topbar .nav ul li{
+    float: left;
+    text-align: center;
   }
 
-  .topbar .nav a{
+  .topbar .nav ul a{
     color: #fff;
     padding-top: 4px;
-    padding-right: 10%;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .topbar .nav .btn_close{
+  .topbar .nav .closebox{
     display: none;
   }
 
