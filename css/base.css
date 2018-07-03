@@ -215,6 +215,7 @@ h2:before{
     float: right;
     position: static;
     width: auto;
+    background-color: transparent;
     transform: none;
     transition: none;
   }
