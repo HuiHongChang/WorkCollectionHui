@@ -28,22 +28,6 @@ $(document).ready(function () {
         $('html,body').animate({scrollTop:0}, 800);
     });
 
-    /*#works點擊特效*/
-
-    $('.jq_btn_works').click(function (e) { 
-        e.preventDefault();
-        $(this).parent().find('.jq_flipInY').removeClass('flipOutY');
-        $(this).parent().find('.jq_flipInY').addClass('flipInY');
-        /*去除主體卷軸*/
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('.jq_close_works').click(function (e) { 
-        e.preventDefault();
-        $(this).parent().addClass('flipOutY');
-        $('body').css('overflow', 'auto');
-    });
-
     $(window).scroll(function () { 
         //在滑動區塊產生對應CSS
         var scrollPos = $(window).scrollTop();
