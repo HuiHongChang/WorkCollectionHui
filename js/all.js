@@ -28,6 +28,41 @@ $(document).ready(function () {
         $('html,body').animate({scrollTop:0}, 800);
     });
 
+    /*#works點擊特效*/
+
+    $('.jq_btn_works').click(function (e) { 
+        e.preventDefault();
+        $(this).parent().find('.jq_flipInY').removeClass('animated flipOutY');
+        $(this).parent().find('.jq_flipInY').addClass('animated flipInY');
+        $(this).parent().find('.jq_flipInY').css('display', 'block');
+
+        /*save scrollPos*/
+        $('body').attr('data-pos', $(window).scrollTop()) ;
+        
+        /*去除主體卷軸*/
+        $("body").addClass('lock-position');
+
+        /*for ios*/
+        $('.img_bg').css('display', 'none');
+        $('.topbar').css('display', 'none');
+    });
+
+    $('.jq_close_works').click(function (e) { 
+        e.preventDefault();
+        $(this).parent().removeClass('animated flipInY');
+        $(this).parent().addClass('animated flipOutY');
+        $("body").removeClass('lock-position');
+
+        /*go back scrollPos*/
+        $(window).scrollTop( $('body').attr('data-pos'));
+        
+        /*for ios*/
+        setTimeout(function(){
+            $('.img_bg').css('display', 'block');
+            $('.topbar').css('display', 'block');
+        }, 1000);
+    });
+
     $(window).scroll(function () { 
         //在滑動區塊產生對應CSS
         var scrollPos = $(window).scrollTop();
