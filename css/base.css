@@ -758,12 +758,6 @@ h2:before{
   display: none;
 }
 
-/*/#works*/
-
-.flipInY{
-  display: block;
-}
-
 .lock-position{
   width: 100vw;
   height: 100vh;

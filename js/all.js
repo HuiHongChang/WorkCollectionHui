@@ -35,13 +35,14 @@ $(document).ready(function () {
         $(this).parent().find('.jq_flipInY').removeClass('animated flipOutY');
         $(this).parent().find('.jq_flipInY').addClass('animated flipInY');
         $(this).parent().find('.jq_flipInY').css('display', 'block');
+        $(this).parent().siblings().find('.jq_flipInY').css('display', 'none');
 
         /*save scrollPos*/
         $('body').attr('data-pos', $(window).scrollTop()) ;
         
         /*去除主體卷軸*/
         $("body").addClass('lock-position');
-
+        
         /*for ios*/
         $('.img_bg').css('display', 'none');
         $('.topbar').css('display', 'none');
@@ -56,8 +57,9 @@ $(document).ready(function () {
         /*go back scrollPos*/
         $(window).scrollTop( $('body').attr('data-pos'));
         
-        /*for ios*/
+        
         setTimeout(function(){
+            /*for ios*/
             $('.img_bg').css('display', 'block');
             $('.topbar').css('display', 'block');
         }, 1000);
